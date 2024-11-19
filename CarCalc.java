@@ -49,9 +49,9 @@ public class CarCalc {
         System.out.println("Enter Car Price: ");
         double price3 = Double.parseDouble(scanner.nextLine());
 
-      /*CarCalculation c1 = new CarCalculation(brand1, model1, price1);
+        CarCalculation c1 = new CarCalculation(brand1, model1, price1);
         CarCalculation c2 = new CarCalculation(brand2, model2, price2);
-        CarCalculation c3 = new CarCalculation(brand3, model3, price3);*/
+        CarCalculation c3 = new CarCalculation(brand3, model3, price3);
 
         double avgPrice = calculateAverage(c1, c2, c3);
         System.out.println("The average price of the three cars is: " + avgPrice);
