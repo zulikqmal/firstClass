@@ -5,7 +5,7 @@ public class CarCalculation {
     private String model;
     private double price;
 
-    public CarCalculation(String brand, String model, double price, double average) {
+    public CarCalculation(String brand, String model, double price) {
         this.brand = brand;
         this.model = model;
         this.price = price;
@@ -49,9 +49,9 @@ public class CarCalculation {
         System.out.println("Enter Car Price: ");
         double price3 = Double.parseDouble(scanner.nextLine());
 
-        CarCalculation c1 = new CarCalculation(brand1, model1, price1, 0);
-        CarCalculation c2 = new CarCalculation(brand2, model2, price2, 0);
-        CarCalculation c3 = new CarCalculation(brand3, model3, price3, 0);
+        CarCalculation c1 = new CarCalculation(brand1, model1, price1);
+        CarCalculation c2 = new CarCalculation(brand2, model2, price2);
+        CarCalculation c3 = new CarCalculation(brand3, model3, price3);
 
         double avgPrice = calculateAverage(c1, c2, c3);
         System.out.println("The average price of the three cars is: " + avgPrice);
