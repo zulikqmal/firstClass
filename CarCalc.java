@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class CarCalculation {
+public class CarCalc {
     private String brand;
     private String model;
     private double price;
 
-    public CarCalculation(String brand, String model, double price) {
+    public CarCalc(String brand, String model, double price) {
         this.brand = brand;
         this.model = model;
         this.price = price;
@@ -17,7 +17,7 @@ public class CarCalculation {
         System.out.println("Price: " + price);
     }
 
-    public static double calculateAverage(CarCalculation car1, CarCalculation car2, CarCalculation car3) {
+    public static double calculateAverage(CarCalc car1, CarCalc car2, CarCalc car3) {
         double average = (car1.price + car2.price + car3.price) / 3;
         return average;
     }
@@ -49,9 +49,9 @@ public class CarCalculation {
         System.out.println("Enter Car Price: ");
         double price3 = Double.parseDouble(scanner.nextLine());
 
-        CarCalculation c1 = new CarCalculation(brand1, model1, price1);
+      /*CarCalculation c1 = new CarCalculation(brand1, model1, price1);
         CarCalculation c2 = new CarCalculation(brand2, model2, price2);
-        CarCalculation c3 = new CarCalculation(brand3, model3, price3);
+        CarCalculation c3 = new CarCalculation(brand3, model3, price3);*/
 
         double avgPrice = calculateAverage(c1, c2, c3);
         System.out.println("The average price of the three cars is: " + avgPrice);
